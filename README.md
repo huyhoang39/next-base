@@ -1,4 +1,6 @@
-# NEXT BASE
+<div align="center">
+    <h1>NEXT BASE</h1>
+</div>
 
 [<img src="http://res.cloudinary.com/unicodeveloper/image/upload/v1524776764/next-jslogo.svg" align="right" width="150">](https://github.com/vercel/next.js)
 The project's goal is to make everything simpler for bootstrapping new [Next - AppRouter](https://nextjs.org/docs/app) projects.
