@@ -1,4 +1,7 @@
 {
   "i18n-ally.localesPaths": ["public/messages", "src/i18n"],
-  "i18n-ally.keystyle": "nested"
+  "i18n-ally.keystyle": "nested",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
 }

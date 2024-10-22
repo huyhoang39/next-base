@@ -1,7 +1,8 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { Button, ButtonProps } from "../ui/button";
+import Link from 'next/link';
+
+import { Button, ButtonProps } from '../ui/button';
 
 interface GotoSignInButtonProps extends ButtonProps {}
 
