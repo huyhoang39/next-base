@@ -1,7 +1,9 @@
-import { auth } from "@/auth";
-import Link from "next/link";
-import GotoSignInButton from "../auth/goto-signin-button";
-import SignOutButton from "../auth/signout-button";
+import Link from 'next/link';
+
+import { auth } from '@/auth';
+
+import GotoSignInButton from '../auth/goto-signin-button';
+import SignOutButton from '../auth/signout-button';
 
 export default async function Header() {
   const session = await auth();
@@ -14,7 +16,11 @@ export default async function Header() {
           <Link href="/" className="text-2xl font-semibold">
             LOGO
           </Link>
-          {user ? <SignOutButton>Sign Out</SignOutButton> : <GotoSignInButton>Go to Sign In</GotoSignInButton>}
+          {user ? (
+            <SignOutButton className="link-button">Sign Out</SignOutButton>
+          ) : (
+            <GotoSignInButton className="link-button">Sign In</GotoSignInButton>
+          )}
         </div>
       </header>
       <div className="h-14"></div>

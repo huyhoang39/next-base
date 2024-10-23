@@ -17,3 +17,7 @@ body {
     --radius: 0.5rem;
   }
 }
+
+.link-button {
+  @apply w-fit !bg-transparent font-medium text-black/80 shadow-none hover:text-black/60;
+}
