@@ -35,7 +35,7 @@ export default function LocaleSwitcherSelect({ defaultValue, items, label }: Pro
           })}
         >
           <SelectPrimitive.Icon asChild>
-            <Icon.Language className="!size-7" />
+            <Icon.Language className="!size-6" />
           </SelectPrimitive.Icon>
         </SelectTrigger>
         <SelectContent>

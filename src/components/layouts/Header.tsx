@@ -18,15 +18,15 @@ export default async function Header() {
           <Link href="/" className="text-2xl font-semibold">
             LOGO
           </Link>
-          <div className="flex">
+          <div className="flex gap-2">
             <LocaleSwitcher />
             {user ? (
-              <SignOutButton className="link-button">
+              <SignOutButton className="link-button p-0">
                 <Icon.GoOutIcon />
               </SignOutButton>
             ) : (
               <Link href="/login">
-                <Button className="link-button p-2">
+                <Button className="link-button p-0">
                   <Icon.GoInIcon />
                   Sign In
                 </Button>
