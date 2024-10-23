@@ -4,6 +4,7 @@ import { auth } from '@/auth';
 
 import SignOutButton from '../auth/signout-button';
 import { Icon } from '../icons/Icon';
+import LocaleSwitcher from '../LocaleSwitcher';
 import { Button } from '../ui/button';
 
 export default async function Header() {
@@ -17,18 +18,21 @@ export default async function Header() {
           <Link href="/" className="text-2xl font-semibold">
             LOGO
           </Link>
-          {user ? (
-            <SignOutButton className="link-button">
-              <Icon.GoOutIcon />
-            </SignOutButton>
-          ) : (
-            <Link href="/login">
-              <Button className="link-button">
-                <Icon.GoInIcon />
-                Sign In
-              </Button>
-            </Link>
-          )}
+          <div className="flex">
+            <LocaleSwitcher />
+            {user ? (
+              <SignOutButton className="link-button">
+                <Icon.GoOutIcon />
+              </SignOutButton>
+            ) : (
+              <Link href="/login">
+                <Button className="link-button p-2">
+                  <Icon.GoInIcon />
+                  Sign In
+                </Button>
+              </Link>
+            )}
+          </div>
         </div>
       </header>
       <div className="h-14"></div>

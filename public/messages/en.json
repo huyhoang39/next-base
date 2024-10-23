@@ -1,6 +1,7 @@
 {
-  "HomePage": {
-    "title": "世界、こにちは!",
-    "test": "test"
+  "LocaleSwitcher": {
+    "en": "English",
+    "ja": "Japan",
+    "lang": "Language"
   }
 }

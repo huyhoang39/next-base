@@ -1,5 +1,7 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
+  "LocaleSwitcher": {
+    "en": "英語",
+    "ja": "日本語",
+    "lang": "言語"
   }
 }
