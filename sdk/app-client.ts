@@ -1,5 +1,5 @@
-import { AppClient, OpenAPI } from './generated_sdk';
-import type { ApiRequestOptions } from './generated_sdk/core/ApiRequestOptions';
+import { AppClient, OpenAPI } from './generated';
+import type { ApiRequestOptions } from './generated/core/ApiRequestOptions';
 
 export class SdkAppClient {
   private static instance: AppClient;

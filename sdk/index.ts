@@ -1,3 +1,3 @@
 export * from './app-client';
-export * from './generated_sdk';
-export * from './generated_sdk/core/ApiRequestOptions';
+export * from './generated';
+export * from './generated/core/ApiRequestOptions';
