@@ -4,7 +4,7 @@ import { Button, ButtonProps } from '../ui/button';
 
 interface SignInButtonProps extends ButtonProps {}
 
-export default function SignInButton(props: SignInButtonProps) {
+export default function SignInGoogleButton(props: SignInButtonProps) {
   return (
     <form
       action={async () => {

@@ -2,8 +2,9 @@ import Link from 'next/link';
 
 import { auth } from '@/auth';
 
-import GotoSignInButton from '../auth/goto-signin-button';
 import SignOutButton from '../auth/signout-button';
+import { Icon } from '../icons/Icon';
+import { Button } from '../ui/button';
 
 export default async function Header() {
   const session = await auth();
@@ -17,9 +18,16 @@ export default async function Header() {
             LOGO
           </Link>
           {user ? (
-            <SignOutButton className="link-button">Sign Out</SignOutButton>
+            <SignOutButton className="link-button">
+              <Icon.GoOutIcon />
+            </SignOutButton>
           ) : (
-            <GotoSignInButton className="link-button">Sign In</GotoSignInButton>
+            <Link href="/login">
+              <Button className="link-button">
+                <Icon.GoInIcon />
+                Sign In
+              </Button>
+            </Link>
           )}
         </div>
       </header>
